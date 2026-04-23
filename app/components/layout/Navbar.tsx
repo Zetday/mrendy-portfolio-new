@@ -32,7 +32,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
         <div className="text-xl font-bold tracking-tighter text-brand-on-surface">
-          Muhammad Rendy
+          Rendy
         </div>
 
         {/* Desktop Links */}

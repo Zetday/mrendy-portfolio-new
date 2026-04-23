@@ -1,33 +1,75 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+
+  /* Cyanic Architecture System Colors */
+  --color-brand-surface: #f4fafe;
+  --color-brand-surface-dim: #d4dbde;
+  --color-brand-surface-bright: #f4fafe;
+  --color-brand-surface-lowest: #ffffff;
+  --color-brand-surface-low: #eef5f8;
+  --color-brand-surface-container: #e8eff2;
+  --color-brand-primary: #00677e;
+  --color-brand-primary-container: #0cd4ff;
+  --color-brand-on-primary-container: #00586b;
+  --color-brand-secondary: #326575;
+  --color-brand-secondary-container: #b7eafe;
+  --color-brand-tertiary: #7f5700;
+  --color-brand-tertiary-container: #feb528;
+  --color-brand-on-surface: #161d1f;
+  --color-brand-on-surface-variant: #3c494e;
+  --color-brand-outline: #6c797f;
+  --color-brand-outline-variant: #bbc9cf;
+
+  /* Custom Spacing */
+  --spacing-huge: 80px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  
-  /* Custom Brand Colors for Navbar */
-  --color-brand-primary: #4f46e5; /* Indigo 600 */
-  --color-brand-on-surface: #111827; /* Gray 900 */
-  --color-brand-on-surface-variant: #4b5563; /* Gray 600 */
-  --color-brand-surface-container: #f3f4f6; /* Gray 100 */
-  --color-brand-outline-variant: #e5e7eb; /* Gray 200 */
-}
+@layer base {
+  body {
+    @apply bg-brand-surface text-brand-on-surface font-sans;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-bold tracking-tight;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--color-brand-outline-variant);
+}
+
+.custom-shadow {
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow:
+    0 20px 25px -5px rgb(0 103 126 / 0.05),
+    0 8px 10px -6px rgb(0 103 126 / 0.05);
+  transform: translateY(-2px);
 }
