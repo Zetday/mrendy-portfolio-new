@@ -2,6 +2,7 @@
 import { motion } from 'motion/react';
 import { FileText, School } from 'lucide-react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -67,11 +68,12 @@ export default function Hero() {
         className='relative flex justify-center md:justify-end'
       >
         <div className='w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden relative z-10 custom-shadow border-4 border-white'>
-          <img
+          <Image
             src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800'
             alt='Professional Developer'
-            className='w-full h-full object-cover'
-            referrerPolicy='no-referrer'
+            fill
+            className='object-cover'
+            sizes="(max-width: 768px) 256px, 320px"
           />
         </div>
         <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brand-primary/5 rounded-full blur-3xl -z-10' />
