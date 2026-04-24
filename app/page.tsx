@@ -1,11 +1,11 @@
-import Navbar from './components/layout/Navbar';
-import Hero from './components/sections/Hero';
-import Experience from './components/sections/Experience';
-import Skills from './components/sections/Skills';
-import Projects from './components/sections/Projects';
-import Certifications from './components/sections/Certifications';
-import Contact from './components/sections/Contact';
-import Footer from './components/layout/Footer';
+import Navbar from '@/app/components/layout/Navbar';
+import Hero from '@/app/components/sections/Hero';
+import Experience from '@/app/components/sections/Experience';
+import Skills from '@/app/components/sections/Skills';
+import Projects from '@/app/components/sections/Projects';
+import Certifications from '@/app/components/sections/Certifications';
+import Contact from '@/app/components/sections/Contact';
+import Footer from '@/app/components/layout/Footer';
 
 export default function Home() {
   return (
