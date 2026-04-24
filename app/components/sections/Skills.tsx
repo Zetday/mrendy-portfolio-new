@@ -1,38 +1,9 @@
 'use client';
-import { Code2, Database, Terminal } from 'lucide-react';
+import { Code2, Terminal } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { skillCategories, languages } from '@/app/data/skills';
 
 export default function Skills() {
-  const skillCategories = [
-    {
-      title: 'Backend & Databases',
-      icon: <Database size={20} />,
-      items: [
-        'NodeJS',
-        'ExpressJS',
-        'Go & Fiber',
-        'PostgreSQL',
-        'MySQL',
-        'Redis',
-        'RabbitMQ',
-      ],
-    },
-    {
-      title: 'Tools & DevOps',
-      icon: <Terminal size={20} />,
-      items: [
-        'Docker',
-        'Kubernetes',
-        'AWS',
-        'GitHub Actions',
-        'Git',
-        'Postman',
-      ],
-    },
-  ];
-
-  const languages = ['TypeScript', 'JavaScript', 'Python', 'Go', 'Java', 'SQL'];
-
   return (
     <section id='skills' className='py-huge'>
       <div className='flex items-center gap-3 mb-12'>
