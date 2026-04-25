@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className='text-xl font-bold tracking-tighter text-brand-on-surface'>
           {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
           <a href='/' className='cursor-pointer'>
-            Rendy
+            Fullstack Developer
           </a>
         </div>
 

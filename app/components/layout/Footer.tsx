@@ -24,10 +24,9 @@ export default function Footer() {
             <FaGithub size={20} />
           </Link>
           <Link
-            href='#'
+            href='https://www.linkedin.com/in/mrendy-17tech'
             target='_blank'
             rel='noopener noreferrer'
-            href='#'
             className='text-brand-on-surface-variant hover:text-brand-primary transition-colors'
           >
             <FaLinkedin size={20} />
