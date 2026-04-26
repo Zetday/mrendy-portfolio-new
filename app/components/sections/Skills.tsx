@@ -33,17 +33,22 @@ export default function Skills() {
                 const <span className='text-blue-300'>stack</span> = {'{'}
               </p>
               <p className='pl-6 text-gray-400'>
-                languages: [<span className='text-green-300'>&apos;TypeScript&apos;</span>
-                , <span className='text-green-300'>&apos;Go&apos;</span>,{' '}
-                <span className='text-green-300'>&apos;Python&apos;</span>],
+                languages: [
+                <span className='text-green-300'>&apos;JavaScript&apos;</span>,{' '}
+                <span className='text-green-300'>&apos;TypeScript&apos;</span>,{' '}
+                <span className='text-green-300'>&apos;PHP&apos;</span>,{' '}
+                <span className='text-green-300'>&apos;Go&apos;</span>],
               </p>
               <p className='pl-6 text-gray-400'>
-                backend: [<span className='text-green-300'>&apos;NodeJS&apos;</span>,{' '}
+                backend: [
+                <span className='text-green-300'>&apos;NodeJS&apos;</span>,{' '}
+                <span className='text-green-300'>&apos;ExpressJS&apos;</span>,{' '}
+                <span className='text-green-300'>&apos;Laravel&apos;</span>,{' '}
                 <span className='text-green-300'>&apos;Fiber&apos;</span>],
               </p>
               <p className='pl-6 text-gray-400'>
                 cloud: [<span className='text-green-300'>&apos;AWS&apos;</span>,{' '}
-                <span className='text-green-300'>&apos;Kubernetes&apos;</span>]
+                <span className='text-green-300'>&apos;Alibaba Cloud&apos;</span>]
               </p>
               <p className='text-indigo-400'>{'}'};</p>
             </div>

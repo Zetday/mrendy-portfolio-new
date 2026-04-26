@@ -5,7 +5,8 @@ export const skillCategories = [
     items: [
       'NodeJS',
       'ExpressJS',
-      'Go & Fiber',
+      'Laravel',
+      'Fiber',
       'PostgreSQL',
       'MySQL',
       'Redis',
@@ -15,8 +16,8 @@ export const skillCategories = [
   {
     title: 'Tools & DevOps',
     icon: '',
-    items: ['Docker', 'Kubernetes', 'AWS', 'GitHub Actions', 'Git', 'Postman'],
+    items: ['Docker', 'AWS', 'Git', 'GitHub', 'Postman'],
   },
 ];
 
-export const languages = ['TypeScript', 'JavaScript', 'Python', 'Go', 'Java', 'SQL'];
+export const languages = ['TypeScript', 'JavaScript', 'Go', 'Java'];

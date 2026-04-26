@@ -11,7 +11,7 @@ export const experiences = [
       'Node.js',
       'React',
       'Vite',
-      'Express',
+      'ExpressJS',
       'PostgreSQL',
       'JWT',
       'Postman',
