@@ -1,12 +1,11 @@
 export const projects = [
   {
-    title: 'Job Portal Architecture',
+    title: 'BaMart',
     description:
-      'A highly scalable job portal backend designed to handle millions of concurrent users. Features complex ERD design and full-text search.',
-    image:
-      'https://images.unsplash.com/photo-1551288049-bbbda536ad89?auto=format&fit=crop&q=80&w=800',
-    tags: ['PostgreSQL', 'Elasticsearch', 'Go'],
-    links: { source: '#', demo: '#' },
+      'Web-based marketplace platform designed to empower local MSMEs (UMKM) in Banjarmasin by providing a digital space to showcase and sell their products. The platform enables seamless product management, transaction handling, and user-friendly browsing, helping small businesses expand their reach and improve sales through technology.',
+    image: '/projects/bamart.png',
+    tags: ['React', 'NextJS', 'GO', 'Fiber', 'PostgreSQL', 'JWT'],
+    links: { source: 'https://github.com/Zetday/BaMart', demo: 'https://bamart.mesun.my.id' },
   },
   {
     title: 'Student Habit Tracker',
